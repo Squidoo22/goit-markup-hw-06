@@ -807,3 +807,13 @@ img {
   background-color: var(--accent-color);
   background-origin: border-box;
 }
+
+.checkbox-label {
+  line-height: 1.71;
+  color: var(--primary-text-color);
+}
+
+.terms-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
