@@ -435,46 +435,45 @@
         </button>
         <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
 
-        <form class="form" action="">
-          <labe class="modal-field">
-            <span class="input-label">Имя</span>
-            <div class="modal-wrapper">
-              <input class="modal-input" type="text" name="name" />
-              <svg class="icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-            </div>
-          </labe>
-          <label class="modal-field">
-            <span class="input-label">Телефон</span>
-            <div class="modal-wrapper">
-              <input class="modal-input" type="text" name="phone" />
-              <svg class="icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </div>
-          </label>
-          <label class="modal-field">
-            <span class="input-label">Почта</span>
-            <div class="modal-wrapper">
-              <input class="modal-input" type="text" name="email" />
-              <svg class="icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-            </div>
+        <form class="form" autocomplete="off">
+          <label class="form-field">
+            <input type="text" class="form-input" name="name" placeholder=" " />
+            <span class="form-label">Имя</span>
+            <svg class="icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
           </label>
 
-          <span class="input-label">Почта</span>
-          <label for="comment"></label>
-          <div class="modal-wrapper">
+          <label class="form-field">
+            <input type="tel" class="form-input" name="phone" placeholder=" " />
+            <span class="form-label">Телефон</span>
+            <svg class="icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </label>
+
+          <label class="form-field">
+            <input
+              type="email"
+              class="form-input"
+              name="email"
+              placeholder=" "
+            />
+            <span class="form-label">Почта</span>
+            <svg class="icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </label>
+
+          <label class="form-field">
             <textarea
-              class="modal-input textarea"
-              id="type"
-              type="text"
+              class="form-input textarea"
+              id="comment"
               placeholder="Введите текст"
               name="comment"
             ></textarea>
-          </div>
+            <span class="form-label">Комментарий</span>
+          </label>
 
           <div>
             <label class="checkbox-wrapper" for="terms">
